@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="testUser">
+    <listeners>
+        <listener class-name="config.ExtendTestNGIReporterListener" />
+    </listeners>
+    <test name="addUser">
+        <classes>
+            <class name="cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

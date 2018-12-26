@@ -1,0 +1,104 @@
+[DEBUG][2018/12/25 15:31:43558][org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)]
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG][2018/12/25 15:31:43640][org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)]
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2018/12/25 15:31:43640][org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)]
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2018/12/25 15:31:43640][org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)]
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2018/12/25 15:31:43641][org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)]
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2018/12/25 15:31:43704][org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)]
+Opening JDBC Connection
+[DEBUG][2018/12/25 15:31:43841][org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)]
+Created connection 1997859171.
+[DEBUG][2018/12/25 15:31:43841][org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)]
+Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7714e963]
+[DEBUG][2018/12/25 15:31:43844][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+==>  Preparing: select * from addUserCase where id=?; 
+[DEBUG][2018/12/25 15:31:43884][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+==> Parameters: 10(Integer)
+[DEBUG][2018/12/25 15:31:43902][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+<==      Total: 1
+[DEBUG][2018/12/25 15:31:44203][org.apache.http.impl.conn.SingleClientConnManager.getConnection(SingleClientConnManager.java:212)]
+Get connection for route HttpRoute[{}->http://localhost:8999]
+[DEBUG][2018/12/25 15:31:44205][org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:145)]
+Connecting to localhost:8999
+[DEBUG][2018/12/25 15:31:44214][org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:132)]
+CookieSpec selected: best-match
+[DEBUG][2018/12/25 15:31:44219][org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:75)]
+Auth cache not set in the context
+[DEBUG][2018/12/25 15:31:44219][org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:643)]
+Attempt 1 to execute request
+[DEBUG][2018/12/25 15:31:44221][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:264)]
+Sending request: POST /v1/addUser HTTP/1.1
+[DEBUG][2018/12/25 15:31:44221][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "POST /v1/addUser HTTP/1.1[\r][\n]"
+[DEBUG][2018/12/25 15:31:44222][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "content-type: application/json[\r][\n]"
+[DEBUG][2018/12/25 15:31:44222][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "Content-Length: 54[\r][\n]"
+[DEBUG][2018/12/25 15:31:44222][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "Host: localhost:8999[\r][\n]"
+[DEBUG][2018/12/25 15:31:44222][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "User-Agent: Apache-HttpClient/4.1.2 (java 1.5)[\r][\n]"
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+>> "[\r][\n]"
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:268)]
+>> POST /v1/addUser HTTP/1.1
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:271)]
+>> content-type: application/json
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:271)]
+>> Content-Length: 54
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:271)]
+>> Host: localhost:8999
+[DEBUG][2018/12/25 15:31:44223][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:271)]
+>> Connection: Keep-Alive
+[DEBUG][2018/12/25 15:31:44224][org.apache.http.impl.conn.DefaultClientConnection.sendRequestHeader(DefaultClientConnection.java:271)]
+>> User-Agent: Apache-HttpClient/4.1.2 (java 1.5)
+[DEBUG][2018/12/25 15:31:44224][org.apache.http.impl.conn.Wire.wire(Wire.java:77)]
+>> "{"createTime":1545557886000,"name":"horse","status":1}"
+[DEBUG][2018/12/25 15:31:44229][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "HTTP/1.1 200 [\r][\n]"
+[DEBUG][2018/12/25 15:31:44231][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "Content-Type: application/json;charset=UTF-8[\r][\n]"
+[DEBUG][2018/12/25 15:31:44231][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018/12/25 15:31:44231][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "Date: Tue, 25 Dec 2018 07:31:44 GMT[\r][\n]"
+[DEBUG][2018/12/25 15:31:44231][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "[\r][\n]"
+[DEBUG][2018/12/25 15:31:44232][org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:249)]
+Receiving response: HTTP/1.1 200 
+[DEBUG][2018/12/25 15:31:44232][org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)]
+<< HTTP/1.1 200 
+[DEBUG][2018/12/25 15:31:44232][org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:255)]
+<< Content-Type: application/json;charset=UTF-8
+[DEBUG][2018/12/25 15:31:44232][org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:255)]
+<< Transfer-Encoding: chunked
+[DEBUG][2018/12/25 15:31:44232][org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:255)]
+<< Date: Tue, 25 Dec 2018 07:31:44 GMT
+[DEBUG][2018/12/25 15:31:44235][org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)]
+Connection can be kept alive indefinitely
+[DEBUG][2018/12/25 15:31:44236][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "1[\r][\n]"
+[DEBUG][2018/12/25 15:31:44236][org.apache.http.impl.conn.Wire.wire(Wire.java:77)]
+<< "1"
+[DEBUG][2018/12/25 15:31:44236][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "[\r][\n]"
+[DEBUG][2018/12/25 15:31:44236][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "0[\r][\n]"
+[DEBUG][2018/12/25 15:31:44236][org.apache.http.impl.conn.Wire.wire(Wire.java:63)]
+<< "[\r][\n]"
+[DEBUG][2018/12/25 15:31:44238][org.apache.http.impl.conn.SingleClientConnManager.releaseConnection(SingleClientConnManager.java:267)]
+Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@3527942a
+[DEBUG][2018/12/25 15:31:46238][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+==>  Preparing: select * from user where name=? and status=? and createTime=? 
+[DEBUG][2018/12/25 15:31:46239][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+==> Parameters: horse(String), 1(Integer), 2018-12-23 17:38:06(String)
+[WARN ][2018/12/25 15:31:46242][org.apache.ibatis.session.AutoMappingUnknownColumnBehavior$2.doAction(AutoMappingUnknownColumnBehavior.java:47)]
+Unknown column is detected on 'mapper.UserMapper.addUserCheck' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[DEBUG][2018/12/25 15:31:46242][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)]
+<==      Total: 1
