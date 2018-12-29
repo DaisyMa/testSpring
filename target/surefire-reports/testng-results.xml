@@ -2,29 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="testUser" duration-ms="2623" started-at="2018-12-25T09:05:16Z" finished-at="2018-12-25T09:05:18Z">
+  <suite name="testUser" duration-ms="5020" started-at="2018-12-29T06:48:47Z" finished-at="2018-12-29T06:48:52Z">
     <groups>
     </groups>
-    <test name="addUser" duration-ms="2623" started-at="2018-12-25T09:05:16Z" finished-at="2018-12-25T09:05:18Z">
+    <test name="addUser" duration-ms="5020" started-at="2018-12-29T06:48:47Z" finished-at="2018-12-29T06:48:52Z">
       <class name="cases.AddUserTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.AddUserTest@39ba5a14]" name="beforeTest" is-config="true" duration-ms="32" started-at="2018-12-25T17:05:16Z" finished-at="2018-12-25T17:05:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.AddUserTest@39ba5a14]" name="beforeTest" is-config="true" duration-ms="37" started-at="2018-12-29T14:48:47Z" finished-at="2018-12-29T14:48:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="addUser()[pri:0, instance:cases.AddUserTest@39ba5a14]" name="addUser" duration-ms="2579" started-at="2018-12-25T17:05:16Z" finished-at="2018-12-25T17:05:18Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [1] but found [true]]]>
-            </message>
+        <test-method status="FAIL" signature="addUser()[pri:0, instance:cases.AddUserTest@39ba5a14]" name="addUser" duration-ms="4972" started-at="2018-12-29T14:48:47Z" finished-at="2018-12-29T14:48:52Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [true]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at cases.AddUserTest.addUser(AddUserTest.java:56)
+              <![CDATA[java.lang.NullPointerException
+	at cases.AddUserTest.addUser(AddUserTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,7 +52,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUser -->
